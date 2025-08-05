@@ -6,10 +6,6 @@ import { Response, cors, getPropertyNameFromReqObject } from "./utils";
 import path from "path"
 import { readdirSync } from "fs";
 
-const files = path.join("vercel", ".temp");
-const dirs = readdirSync(files);
-
-
 export default async function handler(req: VercelRequest, res: VercelResponse) {
 
   try {
